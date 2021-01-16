@@ -40,12 +40,16 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
   
   Após preencher os campos corretamente basta clicar no botão "Cadastrar" que os dados serão salvos no banco e o usuário será redirecionado para a página de listagem de cadastros.
   
+![Tela de cadastramento](/imgs/register.png)
+  
 #### 2.3 - Listagem dos cadastros
 
   Nesta tela será apresentado uma paginação com uma listagem de todos os cadastros existentes no banco de dados. Cada página contém uma lista de 10 cadastros que podem ser navegados atravém de setas no rodapé da página. Além disso, os dados estão apresentados em ordem alfabética crescente.
   Usuários do sistema que são **superusuários** podem editar e excluir os dados cadastrados, caso seja logado em um usuário que não possua tal status, essas opções não irão aparecer. Para facilitar a vida, já está definido um **superusuário** no sistema, e para acessá-lo, basta entrar na parte administrativa criada pelo próprio Django, clicando na opção "Admin" pela barra de navegação:
   * **Login**: admin
   * **Senha**: admin
+  
+![Tela de listagem dos cadastros](/imgs/list-register.png)
   
 #### 2.4 - Geração de cadastros aleatórios
 
