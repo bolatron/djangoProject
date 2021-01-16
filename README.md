@@ -33,9 +33,6 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
     * email
     * apelido
     * observações
-    
-  **obs¹**: Os campos marcados com "!" são obrigatórios.
-  **obs²**: O campo "data de nascimento" utiliza o padrão AAAA-MM-DD, ex: 1999-11-23.
   
   Após preencher os campos corretamente basta clicar no botão "Cadastrar" que os dados serão salvos no banco e o usuário será redirecionado para a página de listagem de cadastros.
   
