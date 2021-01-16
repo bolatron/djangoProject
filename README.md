@@ -13,7 +13,7 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
   
 #### 1.2 - Instalação:
   1. Clone o repositório usando: <code>git clone https://github.com/ArthurGM18/djangoProject</code>.
-  2. Utilize <code>cd djangoProject/</cd> para entrar na pasta com os arquivos.
+  2. Utilize <code>cd djangoProject/</code> para entrar na pasta com os arquivos.
   3. Execute o comando <code>python manage.py runserver</code> ou <code>python3 manage.py runserver</code> para rodar o servidor.
   4. Abra o link onde o site está hospedado.
  
@@ -47,4 +47,5 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
   
 #### 2.4 - Geração de cadastros aleatórios
 
-  Foi adicionado uma opção para gerar cadastros aleatórios. Este recurso se encontra na barra de navegação como **Gerar Cadastros**. Para isso é utilizado uma api geradora de nomes aleatórios disponível em https://gerador-nomes.herokuapp.com/nome/aleatorio, e com ela é possível preencher os dados fictícios cadastramento. 
+  Foi adicionado uma opção para gerar cadastros aleatórios. Este recurso se encontra na barra de navegação como **Gerar Cadastros**. Para isso é utilizado uma api geradora de nomes aleatórios disponível em https://gerador-nomes.herokuapp.com/nome/aleatorio, e com ela é possível preencher os dados fictícios cadastramento.
+  Toda vez que a opção de geração de cadastros for ativada, **serão criados 5 novos cadastros**, e pode levar alguns segundos para a ação ser concluída. Ao final deste processo a página será atualizada com os novos cadastros já inseridos na lista.
