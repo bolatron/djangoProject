@@ -40,7 +40,7 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
   
   Após preencher os campos corretamente basta clicar no botão "Cadastrar" que os dados serão salvos no banco e o usuário será redirecionado para a página de listagem de cadastros.
   
-![Tela de cadastramento](/imgs/register.png)
+![Tela de cadastramento](register.png)
   
 #### 2.3 - Listagem dos cadastros
 
@@ -49,7 +49,7 @@ Projeto destinado à 1° etapa do processo seletivo na E-soft Sistemas.
   * **Login**: admin
   * **Senha**: admin
   
-![Tela de listagem dos cadastros](/imgs/list-register.png)
+![Tela de listagem dos cadastros](list-register.png)
   
 #### 2.4 - Geração de cadastros aleatórios
 
