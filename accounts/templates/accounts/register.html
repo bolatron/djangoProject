@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Cadastro {{account.first_name}} {% endblock %}}
+
+{% block content %}
+
+<body class="d-flex flex-column">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card auth-card">
+                <div class="card-body">
+                    <h4 class="card-title text-center"> Cadastre-se</h4>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        <div id="div_id_first_name" class="form-group"> 
+                            <label for="id_first_name" class=" requiredField">
+                                Primeiro nome
+                                <span class="asteriskField">*</span> 
+                            </label> 
+                            <div class=""> 
+                                <input type="text" name="first_name" class="form-control textinput textInput form-control" maxlength="255" placeholder="Primeiro nome" required id="id_first_name"> 
+                            </div> 
+                        
+                        </div> 
+                        <div id="div_id_last_name" class="form-group"> 
+                            <label for="id_last_name" class=" requiredField">
+                                Sobrenome
+                                <span class="asteriskField">*</span> 
+                            </label> 
+                            <div class=""> 
+                                <input type="text" name="last_name" class="form-control textinput textInput form-control" maxlength="255" placeholder="Sobrenome" required id="id_last_name"> 
+                            </div> 
+                        </div> 
+                        <div id="div_id_age" class="form-group"> 
+                            <label for="id_age" class=" requiredField">
+                                Idade
+                                <span class="asteriskField">*</span> 
+                            </label> 
+                            <div class=""> 
+                                <input type="number" name="age" class="form-control numberinput form-control" placeholder="Idade" required id="id_age"> 
+                            </div> 
+                        </div> 
+                        <div id="div_id_birth_date" class="form-group"> 
+                            <label for="id_birth_date" class=" requiredField">
+                                Data de nascimento
+                                <span class="asteriskField">*</span> 
+                            </label> 
+                            <div class=""> 
+                                <input type="text" name="birth_date" class="form-control dateinput form-control" placeholder="Data de nascimento (AAAA/MM/DD)" required id="id_birth_date"> 
+                            </div> 
+                        </div> 
+                        <div id="div_id_email" class="form-group"> 
+                            <label for="id_email" class=" requiredField">
+                                Email
+                                <span class="asteriskField">*</span>
+                            </label> 
+                            <div class=""> 
+                                <input type="email" name="email" class="form-control emailinput form-control" maxlength="254" placeholder="Email" required id="id_email"> 
+                            </div> 
+                        </div> 
+                        <div id="div_id_nickname" class="form-group"> 
+                            <label for="id_nickname" class="">
+                                Apelido
+                            </label> 
+                            <div class=""> 
+                                <input type="text" name="nickname" class="textinput textInput form-control" id="id_nickname">
+                            </div> 
+                        </div> 
+                        <div id="div_id_observations" class="form-group"> 
+                            <label for="id_observations" class="">
+                                Observações
+                            </label> 
+                            <div class=""> 
+                                <input type="text" name="observations" class="textinput textInput form-control" id="id_observations"> 
+                            </div> 
+                        </div>
+
+                        <button class="btn btn-primary btn-block"> Cadastrar </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

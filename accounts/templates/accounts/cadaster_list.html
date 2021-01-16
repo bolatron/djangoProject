@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} Lista de cadastros {{account.first_name}} {% endblock %}}
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h1>Lista de pessoas cadastradas</h1>
+
+    <ul class="task-list">
+        {% for account in accounts %}
+        <li class="task-item">
+            <span>{{account.first_name}} {{account.last_name}}</span>
+            {% if user.is_superuser %}
+                <a href="delete/{{account.id}}"><span><i class="fas fa-trash"></i></span></a>
+                <a href="edit/{{account.id}}"><span><i class="fas fa-edit"></i></span></a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if accounts.has_previous %}
+                <a href="?page={{ accounts.previous_page_number }}">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            {% endif %}
+
+            <span class="current">
+                {{ accounts.number }} de {{ accounts.paginator.num_pages }}
+            </span>
+
+            {% if accounts.has_next %}
+                <a href="?page={{ accounts.next_page_number }}">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            {% endif %}
+        </span>
+    </div>
+
+</div>
+{% endblock %}
